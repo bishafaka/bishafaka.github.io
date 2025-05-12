@@ -8,16 +8,20 @@ body {
 
 header, footer {
 	background: #000;
-	height: 12.5vh;
 	padding: 25px, 0, 25px, 0;
 }
 
+header{
+	height: 10vh;
+}
+
 footer {
-	display: flex;
+	height: 15vh;
 	justify-content: space-between;
 	position: fixed;
     bottom: 0;
 	width: 100%;
+	display: flex; 
 }
 
 main {
@@ -33,6 +37,7 @@ nav {
 }
 
 a {
+	font-size: 20px;
 	color: #000;
 	text-decoration: none;
 	padding: 15px;
@@ -57,17 +62,23 @@ h1 {
 	font-size: 65px;
 }
 
-div {
+section {
 	margin-left: 2.5vh;
 	margin-right: 2.5vh;
+	margin-bottom: 4vh;
 }
 
 .up {
 	margin-right: 2.5vh;
-	margin-top: 10vh;
+	margin-top: 7.5vh;
+}
+
+.first {
+	margin-left: 10vh;
 }
 
 p {
-	margin-right: 2.5vh;
-	margin-top: 4vh;
+	position: fixed;
+	bottom: 0;
+	right: 2.5vh;
 }
