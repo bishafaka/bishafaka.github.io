@@ -66,6 +66,12 @@ h1 {
 	font-size: 64px;
 }
 
+h2 {
+	color: orange;
+	font-size: 32px;
+	text-shadow: 0px 5px #000;
+}
+
 section {
 	margin-left: 2.5vh;
 	margin-right: 2.5vh;
