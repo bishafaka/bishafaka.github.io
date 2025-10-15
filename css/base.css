@@ -44,8 +44,7 @@ h1 {
 	font-size: 64px;
 	text-shadow: -40px -40px #000, 40px 40px #000;
 	animation: bounce 5s infinite ease-in-out;
-	margin-top: 20vh;
-	margin-bottom: 20vh;
+	margin: 0;
 }
 
 a {
