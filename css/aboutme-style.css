@@ -1,0 +1,48 @@
+.about {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background: #000;
+}
+
+.about-text {
+	max-width: 500px;
+	text-align: left;
+	padding: 24px;
+	padding-top: 0;
+}
+
+.about-text h2 {
+	color: orange;
+	margin-top: 25px;
+	padding-bottom: 16px;
+	font-size: 24px;
+}
+
+.about-text p {
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+img {
+	padding: 24px;
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+  }
+  .about-text {
+    padding-top: 0;
+	text-align: center;
+  }
+
+  img{
+    order: -1;
+  }
+}
