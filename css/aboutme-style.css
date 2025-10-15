@@ -13,7 +13,7 @@ h1{
 }
 
 .about-text {
-	max-width: 500px;
+	max-width: 60%;
 	text-align: left;
 	padding: 24px;
 	padding-top: 0;
@@ -21,7 +21,7 @@ h1{
 
 .about-text h2 {
 	color: orange;
-	margin-top: 25px;
+	padding-top: 16px;
 	padding-bottom: 16px;
 	font-size: 24px;
 }
