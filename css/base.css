@@ -13,6 +13,8 @@ body {
 header,
 footer {
 	background: #000;
+	margin: 0;
+	padding: 0;
 }
 
 main {
@@ -77,9 +79,16 @@ footer p {
 
 /* Mobile Responsive */
 @media (max-width: 900px) {
+	header a {
+		font-size: 16px;
+	}
+	h1{
+		font-size: 48px;
+		text-shadow: -25px -25px #000, 25px 25px #000;
+	}
 	.h1-cut {
 		display: block;
-		margin: 10vh 0;
+		margin: 7.5vh 0;
 	}
 
 	footer a span {
@@ -89,9 +98,9 @@ footer p {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		width: 40px;
-		height: 40px;
+		width: 30px;
+		height: 30px;
 		border-radius: 50%;
-		font-size: 30px;
+		font-size: 24px;
 	}
 }
