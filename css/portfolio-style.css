@@ -1,4 +1,16 @@
 /* Desktop Responsive */
+
+main{
+	margin-top: 80px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
 h1 {
 	margin: 15vh 0;
 }
@@ -78,7 +90,7 @@ li {
 }
 
 article {
-	background-color: #667eea;
+	background-image: linear-gradient(90deg, #667eea, #764ba2);
 	display: flex;
 	flex-direction: column;
 	width: 100%;
