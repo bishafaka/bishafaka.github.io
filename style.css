@@ -230,10 +230,11 @@ p {
 /*MEDIA*/
 @media (max-width: 825px) {
     header {
-        aspect-ratio: 2500 / 901;
+        aspect-ratio: 2500 / 850;
         background-image: url(media/setup-closer.png);
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: flex-end;
     }
     header img {
         display: none;
@@ -253,7 +254,8 @@ p {
         color: white;
     }
     header h1 {
-        font-size: 20vw;
+        bottom: -5vh;
+        font-size: 20cqw;
     }
     main section {
         background-position: right;
