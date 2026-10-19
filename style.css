@@ -5,11 +5,11 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
     color: #773939;
-    cursor: url("media/cursor.png") 32 32, auto;
+    cursor: url("media/cursor.png") 0 0, auto;
 }
 a,
 button {
-    cursor: url("media/icon.png") 32 32, auto;
+    cursor: url("media/cursor-highlight.png") 0 0, auto;
 }
 a {
     text-decoration: none;
