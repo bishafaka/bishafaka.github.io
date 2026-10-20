@@ -59,7 +59,7 @@ main {
 }
 main section {
     aspect-ratio: 3508 / 1000;
-    background-image: url(media/sunrise.png);
+    background-image: url(media/sunrise.jpg);
     background-size: 100% auto;
     background-position: top;
     background-repeat: no-repeat;
