@@ -1,7 +1,7 @@
 /*HEADER*/
 header {
     aspect-ratio: 3508 / 901;
-    background-image: url(media/setup.png);
+    background-image: url(media/setup.jpg);
     background-size: 100% auto;
     background-position: top;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@ header img {
 @media (max-width: 825px) {
     header {
         aspect-ratio: 2500 / 850;
-        background-image: url(media/setup-closer.png);
+        background-image: url(media/setup-closer.jpg);
         flex-direction: column-reverse;
         align-items: center;
         justify-content: flex-end;
