@@ -1,6 +1,7 @@
 /*MAIN*/
 main {
     margin-top: 4vh;
+    margin-bottom: 2vh;
     background-image: url(media/petals.gif);
 }
 main section {
@@ -9,7 +10,7 @@ main section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 }
 article {
     margin-top: 2vh;
@@ -26,15 +27,17 @@ h2 {
     font-size: 3cqw;
     margin: 0;
     padding: 0;
+    padding-left: 1vw;
 }
 p {
     font-size: 2cqw;
     margin: 0;
-    padding: 1vh 0;
+    padding-bottom: 2vh;
+    padding-left: 1vw;
 }
 a {
     color: #5c4aaa;
-    font-size: 3cqw;
+    font-size: 2cqw;
 }
 .link {
     color: #773939;
@@ -69,17 +72,26 @@ a {
 .side.shrink {
     width: 0;
 }
+.side.unshrink {
+    width: 6vw;
+}
 .cover {
     z-index: 1;
     width: 0;
     object-position: left center;
     flex-shrink: 0;
     visibility: hidden;
-    transition: width 0.5s ease;
+    transition: width 0.5s ease, visibility 0s linear 0.5s;
 }
 .cover.show {
     width: 31vw;
     visibility: visible;
+    transition: width 0.5s ease, visibility 0s linear 0s;
+}
+.cover.hide {
+    width: 0;
+    visibility: hidden;
+    transition: width 0.5s ease, visibility 0s linear 0.5s;
 }
 
 /*MEDIA*/
@@ -95,7 +107,8 @@ a {
     p {
         font-size: 3cqw;
         margin: 0;
-        padding: 1vh 0;
+        padding: 0;
+        padding-bottom: 2vh;
     }
     a {
         font-size: 4cqw;
@@ -103,8 +116,11 @@ a {
     .side {
         width: 12vw;
     }
+    .side.unshrink {
+        width: 12vw;
+    }
     .cover.show {
-        width: 64vw;
+        width: 62vw;
     }
     .link {
         font-size: 5cqw;
