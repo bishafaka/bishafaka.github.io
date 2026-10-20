@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="game-title"></title>
+        <link rel="icon" type="image/png" href="media/icon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="game.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header id="game-header">
+            <img id="game-logo">
+        </header>
+        <main id="game-content">
+            <audio id="game-music" autoplay loop></audio>
+            <article class="hook">
+                <h3 id="game-hook"></h3>
+            </article>
+            <article id="game-inline" class="preview">
+                <img id="game-preview">
+            </article>
+            <section>
+                <a id="game-youtube">
+                    <video id="game-trailer" autoplay muted loop playsinline></video>
+                    <img id="game-error-trailer" style="display:none;">
+                </a>
+                <article id="game-description" class="about"></article>
+            </section>
+            <img class="inline">
+            <article class="carrousel"><img id="game-carrousel"></article>
+            <article>
+                <h2>Play it NOW on:</h2>
+                <a id="game-itchio-link"><img id="game-itchio" class="itchio"></a>
+            </article>
+        </main>
+        <footer id="footer"></footer>
+        <script src="game.js"></script>
+    </body>
+</html>
