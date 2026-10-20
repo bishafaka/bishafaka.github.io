@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //AUDIO VOLUME
     document.querySelectorAll("audio").forEach(audio => {
-        audio.volume=.05;
+        audio.volume=.25;
     });
 
     //GAME BOXES ANIMATION BEHAVIOUR

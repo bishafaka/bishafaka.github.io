@@ -1,3 +1,4 @@
+/*MAIN*/
 main {
     margin-top: 4vh;
     background-image: url(media/petals.gif);
@@ -20,6 +21,20 @@ article img {
     padding: 0;
     box-shadow: 5px 5px 10px #4a1515;
     height: auto;
+}
+h2 {
+    font-size: 3cqw;
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-size: 2cqw;
+    margin: 0;
+    padding: 1vh 0;
+}
+a {
+    color: #5c4aaa;
+    font-size: 3cqw;
 }
 .link {
     color: #773939;
@@ -47,7 +62,7 @@ article img {
 .side {
     cursor: url("media/cursor-highlight.png") 0 0, auto;
     box-sizing: border-box;
-    width: 4vw;
+    width: 6vw;
     flex-shrink: 0;
     transition: width 0.5s ease;
 }
@@ -63,12 +78,27 @@ article img {
     transition: width 0.5s ease;
 }
 .cover.show {
-    width: 21vw;
+    width: 31vw;
     visibility: visible;
 }
+
+/*MEDIA*/
 @media (max-width: 825px) {
     p, h2 {
         text-align: center;
+    }
+    h2 {
+        font-size: 5cqw;
+        margin: 0;
+        padding: 0;
+    }
+    p {
+        font-size: 3cqw;
+        margin: 0;
+        padding: 1vh 0;
+    }
+    a {
+        font-size: 4cqw;
     }
     .side {
         width: 12vw;

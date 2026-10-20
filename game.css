@@ -28,7 +28,6 @@ nav {
     bottom: 0;
     display: flex;
     width: 100%;
-    margin-left: 5vw;
     gap: 1.5vw;
 }
 nav a {
@@ -151,7 +150,6 @@ article strong {
         height: 80vh;
     }
     header img {
-        top: 10vh;
         height: auto;
         width: 100vw;
     }
