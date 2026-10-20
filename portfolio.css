@@ -1,0 +1,116 @@
+/*MAIN*/
+main {
+    margin-top: 4vh;
+    background-image: url(media/petals.gif);
+}
+main section {
+    margin: 0;
+    background-color: #4a1515;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+article {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+}
+article img {
+    margin: 0;
+    padding: 0;
+    box-shadow: 5px 5px 10px #4a1515;
+    height: auto;
+}
+h2 {
+    font-size: 3cqw;
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-size: 2cqw;
+    margin: 0;
+    padding: 1vh 0;
+}
+a {
+    color: #5c4aaa;
+    font-size: 3cqw;
+}
+.link {
+    color: #773939;
+    background-color: white;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding: 2%;
+    font-size: 2cqw;
+    visibility: hidden;
+    width: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 5vh;
+    transition: width 0.5s ease, margin-right 0.5s ease;
+}
+.link.show {
+    width: 3vw;
+    visibility: visible;
+    margin-right: 2vw;
+}
+.link:hover {
+    width: 6vw;
+}
+.side {
+    cursor: url("media/cursor-highlight.png") 0 0, auto;
+    box-sizing: border-box;
+    width: 6vw;
+    flex-shrink: 0;
+    transition: width 0.5s ease;
+}
+.side.shrink {
+    width: 0;
+}
+.cover {
+    z-index: 1;
+    width: 0;
+    object-position: left center;
+    flex-shrink: 0;
+    visibility: hidden;
+    transition: width 0.5s ease;
+}
+.cover.show {
+    width: 31vw;
+    visibility: visible;
+}
+
+/*MEDIA*/
+@media (max-width: 825px) {
+    p, h2 {
+        text-align: center;
+    }
+    h2 {
+        font-size: 5cqw;
+        margin: 0;
+        padding: 0;
+    }
+    p {
+        font-size: 3cqw;
+        margin: 0;
+        padding: 1vh 0;
+    }
+    a {
+        font-size: 4cqw;
+    }
+    .side {
+        width: 12vw;
+    }
+    .cover.show {
+        width: 64vw;
+    }
+    .link {
+        font-size: 5cqw;
+        margin-bottom: 0;
+    }
+    .link.show {
+        width: 8vw;
+    }
+}

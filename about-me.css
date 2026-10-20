@@ -1,0 +1,300 @@
+/*MAIN*/
+main {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.mp3 {
+    background-image: none;
+    padding: 10px;
+    background-color: #773939;
+    border-radius: 15px;
+    display: block;
+    position: absolute;
+    right: 1.5vw;
+    bottom: -5vh;
+    transition: transform 0.3s ease;
+    width: 16vw;
+    height: auto;
+    box-shadow: 5px 5px 10px #4a1515;
+}
+.mp3:hover {
+    transform: scale(1.1);
+}
+.mp3 article {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    color: #773939;
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.mp3 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+}
+.mp3 article img {
+    width: 6vw;
+    border-radius: 15px;
+}
+.mp3 h2, .mp3 h3 {
+    padding-bottom: 1%;
+    margin: 0;
+}
+.mp3 h2 {
+    font-size: 1.75cqw;
+}
+.mp3 h3 {
+    color: #a06565;
+    font-size: 1cqw;
+}
+main section {
+    aspect-ratio: 3508 / 1000;
+    background-image: url(media/sunrise.png);
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    position: relative;
+    color: white;
+}
+main section img {
+    position: relative;
+    width: 30vw;
+    height: auto;
+    object-fit: contain;
+    align-self: flex-end;
+    margin-left: auto;
+}
+.about p {
+    background-image: url(media/petals.gif);
+    font-size: 2cqw;
+    margin: 2vh 2vw;
+    margin-left: 10vw;
+    padding: 2vh 2vw;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 15px;
+    color: #773939;
+    height: auto;
+}
+.about p.intro {
+    margin-left: 14vw;
+    padding-left: 8vw;
+}
+.about p.body {
+    margin-left: 8vw;
+    padding-left: 6vw;
+}
+.about p.end {
+    margin-right: 16vw;
+    padding-right: 6vw;
+    margin-left: 0;
+}
+.window {
+    aspect-ratio: unset;
+    display: block;
+    position: absolute;
+    width: 12vw;
+    left: 17vw;
+    background-color: #773939;
+    background-image: none;
+    border-radius: 10px;
+    transform: rotate(-5deg);
+    box-shadow: 5px 5px 10px #4a1515;
+}
+.window h2 {
+    padding: 5px 10px;
+    margin: 0;
+    color: white;
+    font-size: 1cqw;
+    text-align: center;  
+}
+.window p {
+    background-color: white;
+    color: #773939;;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 2%;
+    font-size: 2cqw;
+    text-align: center;
+}
+.items {
+    position: absolute;
+}
+.item {
+    position: relative;
+    display: block;
+    object-fit: contain;
+    margin: 0;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.item:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #85b8b8)drop-shadow(0 0 20px #00ffff);
+}
+.bag {
+    width: 20vw;
+}
+.switch {
+    width: 12vw;
+    transform: rotate(-15deg);
+}
+.earbuds {
+    width: 5vw;
+    transform: rotate(-15deg);
+}
+.t-mobilitat {
+    width: 6vw;
+    transform: rotate(30deg);
+}
+
+p {
+    text-align: justify;
+}
+
+/*MEDIA*/
+@media (max-width: 825px) {
+    main section {
+        background-position: right;
+        display: flex;
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: flex-start;
+        aspect-ratio: unset;
+        background-size: cover;
+        height: 100vh;
+    }
+    main section > img {
+        object-fit: cover;
+        object-position: top;
+        width: 100vw;
+        height: 125vh;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .items {
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        bottom: 48vh;
+        right: 2vw;
+        z-index: 10;
+    }
+    .bag {
+        width: 40vw;
+    }
+    .switch {
+        width: 24vw;
+    }
+    .earbuds {
+        width: 10vw;
+    }
+    .t-mobilitat {
+        width: 12vw;
+    }
+    .about p {
+        background-color: #ffffffea;
+        padding: 0;
+        margin: 0;
+    }
+    .about p.intro, .about p.body, .about p.end {
+        font-size: 3cqw;
+        position: absolute;
+        margin-left: 0;
+        padding: 3vh 3vw;
+        margin-right: 0;
+        border-radius: 0;
+    }
+    .about p.intro {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        bottom: 55vh;
+        left: 0;
+        width: 60vw;
+    }
+    .about p.body {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        bottom: 25vh;
+        right: 0;
+        width: 80vw;
+    }
+    .about p.end {
+        border-top-right-radius: 15px;
+        bottom: 0;
+        left: 0;
+        width: 80vw;
+        padding-bottom: 8vh;
+    }
+    .window {
+        width: 35vw;
+        height: auto;
+        left: 60vw;
+        top: -10vh;
+    }
+    .window h2 {
+        font-size: 3cqw;
+    }
+    .window p {
+        font-size: 6cqw;
+    }
+    .mp3 {
+        right: 3vw;
+        width: 30vw;
+        height: auto;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .mp3 article {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .mp3 article img {
+        width: 10vw;
+    }
+    .mp3 h2 {
+        font-size: 3cqw;
+    }
+    .mp3 h3 {
+        font-size: 2.25cqw;
+    }
+}
+@media (max-width: 640px) {
+    .window {
+        width: 35vw;
+        height: auto;
+        left: 60vw;
+        top: -0vh;
+    }
+    .about p.intro {
+        bottom: 45vh;
+        left: 0;
+        width: 60vw;
+    }
+    .about p.body {
+        bottom: 19vh;
+        right: 0;
+        width: 80vw;
+    }
+    .about p.end {
+        bottom: 0;
+        left: 0;
+        width: 80vw;
+        padding-bottom: 6vh;
+    }
+    .items {
+        bottom: 39vh;
+    }
+}
