@@ -73,7 +73,7 @@ async function loadGame() {
         trailer.onerror=() => {
             trailer.onerror=null;
             trailer.style.display="none";
-            trailerError.src=folder+"trailer.png";
+            trailerError.src=folder+"trailer.jpg";
             trailerError.style.display="block";
         };
         trailer.load();
