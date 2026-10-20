@@ -188,7 +188,7 @@ p {
         position: absolute;
         display: flex;
         flex-direction: column-reverse;
-        bottom: 48vh;
+        bottom: 45vh;
         right: 2vw;
         z-index: 10;
     }
@@ -220,14 +220,14 @@ p {
     .about p.intro {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        bottom: 55vh;
+        bottom: 50vh;
         left: 0;
         width: 60vw;
     }
     .about p.body {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-        bottom: 25vh;
+        bottom: 20vh;
         right: 0;
         width: 80vw;
     }
@@ -235,8 +235,8 @@ p {
         border-top-right-radius: 15px;
         bottom: 0;
         left: 0;
-        width: 80vw;
-        padding-bottom: 8vh;
+        width: 60vw;
+        padding-bottom: 2vh;
     }
     .window {
         width: 35vw;
@@ -271,7 +271,7 @@ p {
         font-size: 2.25cqw;
     }
 }
-@media (max-width: 640px) {
+@media (max-width: 690px) {
     .window {
         width: 35vw;
         height: auto;
@@ -279,22 +279,21 @@ p {
         top: -0vh;
     }
     .about p.intro {
-        bottom: 45vh;
+        bottom: 42vh;
         left: 0;
         width: 60vw;
     }
     .about p.body {
-        bottom: 19vh;
+        bottom: 16vh;
         right: 0;
         width: 80vw;
     }
     .about p.end {
         bottom: 0;
         left: 0;
-        width: 80vw;
-        padding-bottom: 6vh;
+        padding-bottom: 2vh;
     }
     .items {
-        bottom: 39vh;
+        bottom: 36vh;
     }
 }
