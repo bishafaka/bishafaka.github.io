@@ -8,13 +8,13 @@ p {
 
 /*HEADER*/
 header {
+    aspect-ratio: 1200 / 720;
     display: flex;
     justify-content: center;
     background-image: var(--header-bg);
-    height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-attachment: fixed;
     position: relative;
 }
@@ -147,7 +147,7 @@ article strong {
 /*MEDIA*/
 @media (max-width: 825px) {
     header {
-        height: 80vh;
+        aspect-ratio: 720 / 1200;
     }
     header img {
         height: auto;
